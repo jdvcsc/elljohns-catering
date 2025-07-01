@@ -1,0 +1,279 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #17171f;
+    color: rgb(215, 211, 211);
+    padding: 50px;
+    height: 90px;  
+    border-radius: 8px;
+}
+
+
+
+h1 {
+    position: relative;
+    left: 96px;
+    top: 32px; 
+}
+
+.top-right-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-spacing: 20px;
+}
+
+.top-right-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    
+}
+
+
+section {
+    padding: 20px;
+    align-items: align, center;
+    text-align: center;
+    display: grid;
+}
+
+.about-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+.services-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 210px;
+    margin-bottom: 330px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.service-button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    width: 105px    ;
+}
+
+.service-button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.service-button:active {
+    transform: scale(.95);
+    opacity: 0.5;
+}
+
+
+
+.menu-button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.menu-button:active {
+    transform: scale(0.95);
+    opacity: 0.5;
+}
+.menu-button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fa-facebook {
+    color: #1877f2;
+    transition: transform 0.2s;
+}
+
+.fa-facebook:hover {
+    transform: scale(1.2);
+}
+
+.menu-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-image {
+    width: 600px;
+    height: 600px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu-images :hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.logo-image {
+    width: 120px;
+    height: 120px;
+    margin-top: -100px;
+    margin-left: -39px;
+}
+
+.about-text {
+max-width: 800px; 
+margin: 0 auto; 
+font-size: 16px; 
+line-height: 1.8; 
+color: #333;
+}
+
+.img-container {
+margin: 100px 0 0 200px;
+width: 70%;
+height: 450px;
+display: flex; 
+justify-content: center;
+gap: 10px;  
+margin-left: 320px;
+flex-wrap: wrap;
+}
+
+.catering-image {
+    width: 10%;
+    height: 110%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(4, 4, 4, 0.872);
+    transition: all ease-in-out 0.5s;
+}
+
+.catering-image:hover {
+    width: 25%;
+}
+
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.service-list li {
+  margin: 15px 0;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.5;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+        height: auto;
+        border-radius: 0;
+    }
+
+    h1 {
+        left: 0;
+        top: 0;
+        font-size: 1.5rem;
+        text-align: center;
+        position: static;
+        margin: 10px 0;
+    }
+
+    .top-right-link {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    section, .about-section, .services-section {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .menu-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-image {
+        width: 90vw;
+        height: auto;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .logo-image {
+        width: 80px;
+        height: 80px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .img-container {
+        margin: 20px 0 0 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .catering-image {
+        width: 45%; /* or 48% to fit 2 per row with gap */
+        height: auto;
+        object-fit: cover;
+        border-radius: 3px;
+        border: 2px solid rgba(4, 4, 4, 0.872);
+        transition: all ease-in-out 0.5s;
+        margin: 0;
+    }
+
+    .catering-image:hover {
+        width: 90%;
+    }
+
+    .about-text {
+        font-size: 15px;
+        padding: 0 5px;
+    }
+
+    .service-button,
+    .menu-button {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 1rem;
+    }
+}
